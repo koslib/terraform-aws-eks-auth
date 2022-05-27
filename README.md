@@ -7,7 +7,8 @@ A Terraform module facilitating IAM users and roles authentication for EKS clust
 
 ```
 module "kube_auth" {
-    source = "koslib/terraform-aws-eks-auth"
+    source = "koslib/eks-auth/aws"
+    version = "0.1.0"
 
     aws_region   = "eu-north-1"
     aws_profile  = "production"
